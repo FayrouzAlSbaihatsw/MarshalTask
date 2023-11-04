@@ -1,0 +1,41 @@
+﻿@model LogIn
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="~/css/style1.css" asp-append-version="true" />
+</head>
+
+<body>
+    <div class="containerLog">
+        <div class="left-side">
+            <div class="login-container">
+                <h2>Login</h2>
+                <form >
+                    <input type="hidden" class="form-control" asp-for="Id">
+                    <div class="input-container">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" asp-for=Username required>
+                    </div>
+                    <div class="input-container">
+                        <label for="password">Password</label>
+                        <input type="password" asp-for=Password required>
+                    </div>
+                    <input type="submit" value="Login" class="button-20" asp-action="CheckPassword" />
+                </form>
+                <a asp-action="SignUpPage">Don't have an account? Sign Up</a>
+
+            </div>
+        </div>
+        <div class="right-side">
+            <img src="~/imgs/capturestutodo.jpg" />
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+

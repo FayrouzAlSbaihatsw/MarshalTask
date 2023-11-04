@@ -1,0 +1,47 @@
+﻿@model SignUp
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="~/css/style1.css" asp-append-version="true" />
+</head>
+
+<body>
+    <form method="post">
+    <div class="containerLog">
+        <div class="left-side">
+            <div class="login-container">
+                <h2>SignUP</h2>
+               
+                    <div class="input-container">
+                        <label >Username</label>
+                        <input type="text" asp-for=UserName required>
+                    </div>
+                    <div class="input-container">
+                        <label >Password</label>
+                        <input type="password" asp-for=Password required>
+                        
+                    </div>
+                    <div class="input-container">
+                        <label>Confirm Password</label>
+                        <input type="password" asp-for=ConfirmPassword required>
+
+                    </div>
+                 @*   <div class="input-container">
+                        <label>Age</label>
+                        <input type="text" asp-for=Age required>
+                    </div>*@
+                    <input type="submit" value="SignUp" class="button-20" asp-action="SignUp" />
+                
+            </div>
+        </div>
+        <div class="right-side">
+                <img src="~/imgs/capturesignuptodo.jpg" />
+            </div>
+    </div>
+    </form>
+</body>
+
+</html>

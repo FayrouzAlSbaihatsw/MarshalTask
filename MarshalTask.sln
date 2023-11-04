@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarshalTask", "MarshalTask\MarshalTask.csproj", "{D53A36EC-F4F2-42B7-B794-5F79407CCCAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D53A36EC-F4F2-42B7-B794-5F79407CCCAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D53A36EC-F4F2-42B7-B794-5F79407CCCAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D53A36EC-F4F2-42B7-B794-5F79407CCCAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D53A36EC-F4F2-42B7-B794-5F79407CCCAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06039E96-54D2-435D-87A3-5328B89C19A4}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,41 @@
+﻿@model TaskDTO
+<!DOCTYPE html>
+<html>
+<link href="~/css/style3.css" rel="stylesheet" />
+<body>
+
+ <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>New Task</h1>
+      <p>Please fill Task Details</p>
+      <hr>
+      <label ><b>Title</b></label>
+      <input type="text" placeholder="Enter Title" asp-for="Title" required>
+
+      <label><b>Description</b></label>
+      <input type="text" placeholder="Enter Description" asp-for="Description" required>
+
+      <label><b>DueDate</b></label>
+      <input type="date" placeholder="Enter DueDate" asp-for="DueDate" required>
+
+
+      <input type="hidden" asp-for="Id" required>
+   
+      <div class="clearfix">
+       
+         @if ((bool)ViewData["IsEdit"] == true){
+            <button type="submit" class="signupbtn" asp-action="UpdateTask">Update Task</button>
+         }
+
+        else{
+        <button type="submit" class="signupbtn" asp-action="AddNewTask">Add Task</button>
+        }
+
+      </div>
+    </div>
+  </form>
+
+</div>
+
+  </body>
+  </html>
